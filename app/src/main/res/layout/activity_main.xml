@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFF9FF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Halo,"
+                android:textSize="18sp"
+                android:textColor="#C9BABD"
+                android:lineHeight="27dp"/>
+            
+            <TextView
+                android:id="@+id/tvNameUser"
+                android:layout_marginTop="5dp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="Fakhri Zain"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:lineHeight="36sp"/>
+            
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgUser"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            android:background="#393939"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLiveTranslation"
+        android:layout_width="336dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="13dp"
+        app:cardBackgroundColor="#52C3FF">
+        
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="Penerjemah Langsung"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:lineHeight="27sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="16.8dp"
+                android:src="@drawable/vector"
+                android:layout_marginLeft="110dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="227dp"
+            android:layout_height="30dp"
+            android:text="Kamus Bahasa Isyarat"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAlphabet"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#52C3FF">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Alfabet"
+                        android:textColor="#EFF9FF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAngka"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#F9AE2B">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Angka"
+                        android:textColor="#EFF9FF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPerkenalan"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#7382C0">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Perkenalan"
+                        android:textColor="#EFF9FF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSehari"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#4CAF50">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sehari-hari"
+                        android:textColor="#EFF9FF"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Komunitas"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="162dp"
+                android:layout_gravity="center_vertical"
+                android:text="Lihat >"
+                android:textColor="#52C3FF"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_menu" />
+
+</LinearLayout>
