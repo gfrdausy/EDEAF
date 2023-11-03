@@ -1,6 +1,7 @@
 # EDEAF
 
 Pijar Hackathon 2023
+
 EDEAF (Education for Deaf Student) yang artinya aplikasi ini adalah sebuah aplikasi yang berfokus dalam membantu pelajar-pelajar tunarungu dalam kegiatan belajar dengan berbagai fitur menarik, membuat aplikasi ini smart, easy, dan fun untuk digunakan.
 
 Beberapa fitur utama yang dimiliki EDEAF di antaranya:
