@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PijarCommunity"
         tools:targetApi="31">
         <activity
+            android:name=".LiveTransTeacherAdd"
+            android:exported="false" />
+        <activity
+            android:name=".LiveTransStudentHistory"
+            android:exported="false" />
+        <activity
             android:name=".LiveTransStudentRoom"
             android:exported="false" />
         <activity

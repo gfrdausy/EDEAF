@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LiveTransStudentRoom"
+    tools:context=".LiveTransStudentHistory"
     android:orientation="vertical"
-    android:background="#EFF9FF">
+    android:background="#E3E7E8">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,8 @@
             android:layout_gravity="center_vertical"
             android:paddingVertical="12dp"
             android:gravity="center_horizontal"
-            android:text="Penerjemah Langsung"
+            android:paddingRight="50dp"
+            android:text="Riwayat"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -45,7 +46,7 @@
         android:textSize="20sp"
         android:textColor="#000000"
         android:textStyle="bold"/>
-    
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,15 +70,5 @@ Purus ante elementum diam commodo orci. Iaculis in fermentum a faucibus id quis 
             android:textColor="#000000"/>
 
     </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cornerRadius="12dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:text="Bertanya"
-        android:paddingHorizontal="5dp"
-        android:backgroundTint="#1B8EFD"/>
 
 </LinearLayout>
