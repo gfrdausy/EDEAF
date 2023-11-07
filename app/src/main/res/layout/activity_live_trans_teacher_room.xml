@@ -58,16 +58,17 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#F9AE2B"
             android:insetLeft="0dp"
+            android:insetTop="0dp"
             android:insetRight="0dp"
             android:insetBottom="0dp"
-            android:insetTop="0dp"
             app:cornerRadius="50dp"
-            android:backgroundTint="#F9AE2B"
-            android:layout_marginLeft="8dp"
             app:icon="@drawable/share"
             app:iconGravity="textStart"
-            app:iconPadding="0dp"/>
+            app:iconPadding="0dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </LinearLayout>
     
@@ -111,16 +112,17 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:insetLeft="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:insetTop="0dp"
-        app:cornerRadius="50dp"
         android:layout_gravity="center"
         android:backgroundTint="#1B8EFD"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="50dp"
         app:icon="@drawable/voice"
         app:iconGravity="textStart"
+        app:iconPadding="0dp"
         app:iconSize="23dp"
-        app:iconPadding="0dp"/>
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </LinearLayout>
