@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFF9FF"
+    tools:context=".LiveTransTeacherRoom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:paddingVertical="12dp"
+            android:layout_marginLeft="27dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingVertical="12dp"
+            android:gravity="center_horizontal"
+            android:paddingRight="40dp"
+            android:text="Penerjemah Langsung"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130982"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="40dp"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#F9AE2B"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:insetTop="0dp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#F9AE2B"
+            android:layout_marginLeft="8dp"
+            app:icon="@drawable/share"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"/>
+
+    </LinearLayout>
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:cardCornerRadius="12dp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#1B8EFD"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:layout_marginHorizontal="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pertanyaan"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                tools:listitem="@layout/list_item_ask"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:cornerRadius="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#1B8EFD"
+        app:icon="@drawable/voice"
+        app:iconGravity="textStart"
+        app:iconSize="23dp"
+        app:iconPadding="0dp"/>
+
+</LinearLayout>

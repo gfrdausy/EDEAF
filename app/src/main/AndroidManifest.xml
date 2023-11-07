@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PijarCommunity"
         tools:targetApi="31">
         <activity
+            android:name=".LiveTransTeacherRoom"
+            android:exported="false" />
+        <activity
             android:name=".LiveTransTeacherAdd"
             android:exported="false" />
         <activity
