@@ -134,7 +134,7 @@
                     android:layout_marginLeft="10dp"
                     android:background="null"
                     android:hint="Tulis sesuatu disini..."
-                    tools:ignore="TouchTargetSizeCheck" />
+                     />
 
             </LinearLayout>
 

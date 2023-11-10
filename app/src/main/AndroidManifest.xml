@@ -13,6 +13,21 @@
         android:theme="@style/Theme.PijarCommunity"
         tools:targetApi="31">
         <activity
+            android:name=".addKamus"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Angka"
+            android:exported="false" />
+        <activity
+            android:name=".Alfabet"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

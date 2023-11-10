@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Pijar-Community</string>
+    
+    <string-array name="jenis">
+        <item>Alfabet</item>
+        <item>Angka</item>
+        <item>Perkenalan</item>
+        <item>Aktivitas</item>
+    </string-array>
 </resources>
